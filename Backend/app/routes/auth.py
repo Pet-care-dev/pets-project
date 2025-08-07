@@ -53,3 +53,4 @@ def login(user: UserLogin):
 @router.get("/dashboard")
 def get_dashboard(current_user=Depends(get_current_user)):
     return {"message": f"Welcome {current_user['first_name']}!"}
+
